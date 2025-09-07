@@ -1,13 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_BASE_URL = "https://apna-college-backend-nrz8.onrender.com";
+const API_BASE_URL = "https://apna-college-backend-nrz8.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   withCredentials: true,
   headers: {
-    'Content-Type': 'application/json'
-  }
+    "Content-Type": "application/json",
+  },
 });
 
 export default api;
